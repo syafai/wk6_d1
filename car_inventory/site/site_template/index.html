@@ -1,22 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>PTL Car Dealership</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
   <header>
     <h1>Welcome to Prime Time Luxury Car Dealership</h1>
   </header>
-  
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Inventory</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
   
   <section>
     <h2>Featured Cars</h2>
@@ -56,8 +46,61 @@
     </div>
   </section>
   
-  <footer>
-    <p>&copy; 2023 Prime Time Luxury Car Dealership. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+  <footer class="row" id="footer">
+    <div class="col-2">
+        <img src="../../static/images/Coding Drones Logo.png" alt="Coding Drones Logo" id="footer-logo">
+    </div>
+    <div class="col-2">
+        <div class="footer-text-flex">
+            <h4>Platform</h4>
+            <p>Why Luxury Cars?</p>
+            <p>The Coding Drones Project</p>
+            <p>Donate</p>
+            <p>Spread The Word</p>
+            <p>Our Process</p>
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="footer-text-flex">
+            <h4>Platform</h4>
+            <p>Why Luxury Cars?</p>
+            <p>The Coding Drones Project</p>
+            <p>Donate</p>
+            <p>Spread The Word</p>
+            <p>Our Process</p>
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="footer-text-flex">
+            <h4>Platform</h4>
+            <p>Why Luxury Cars?</p>
+            <p>The Coding Drones Project</p>
+            <p>Donate</p>
+            <p>Spread The Word</p>
+            <p>Our Process</p>
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="footer-text-flex">
+            <h4>Platform</h4>
+            <p>Why Luxury Cars?</p>
+            <p>The Coding Drones Project</p>
+            <p>Donate</p>
+            <p>Spread The Word</p>
+            <p>Our Process</p>
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="footer-text-flex">
+            <h4>Platform</h4>
+            <p>Why Luxury Cars?</p>
+            <p>The Coding Drones Project</p>
+            <p>Donate</p>
+            <p>Spread The Word</p>
+            <p>Our Process</p>
+        </div>
+    </div>
+</footer>
+</div>
+
+{% endblock content %}
