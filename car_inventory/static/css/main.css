@@ -1,46 +1,127 @@
+/* Nav Styles */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+.ct-nav {
+    display: flex;
+    justify-content: space-between; 
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+/* Main Logo Image */
+.ct-nav img{
+    width: 25%; 
+    max-width: 100%;
+    margin-left: 2vw; 
 }
 
-nav {
-    background-color: #f4f4f4;
-    padding: 10px;
+#horizontal-list {
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px; 
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
+#horizontal-list li, #horizontal-list a{
     display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: #333;
     text-decoration: none;
-    padding: 5px;
+    padding: .5vw;
+    color: black; 
 }
 
-section {
-    padding: 20px;
+#horizontal-list a:nth-last-child(1){
+    border: 2px solid blue;
+    border-radius: 10px;
+    margin-right: .2vw; 
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+/* End Nav Styles */
+
+/* Hero Section Styles */
+
+#header-text {
+    padding: 2vw;
+}
+
+.header-image {
+    width: 82%;
+    max-width: 100%; 
+}
+
+/* End of Hero Section */
+
+
+
+/* Middle Section Styles */
+
+#middle-text{
     text-align: center;
+    padding: 13vh; 
 }
+
+#middle-text h2{
+    padding: 1.5vw; 
+}
+
+/* End of Middle Section */
+
+/* Feature Section Styles */
+#api-image, #graphql-image, #database-image{
+    margin-bottom: 10vh; 
+}
+
+#features-section{
+    margin: 8vw; 
+}
+
+/* End of Features Section */
+
+/* Community Section Styles */
+
+#Car-image{
+    width: 50%;
+    max-width: 75%;
+    margin-left: 3vw; 
+}
+
+/* End of Community Section */
+
+/* Footer Section Styles */
+
+.footer-text-flex{
+    display: flex;
+    flex-direction: column; 
+    margin-top: 3vw; 
+}
+
+#footer-logo{
+    width: 100%;
+    max-width: 100%; 
+}
+
+#footer{
+    border-top: 3px solid black;
+    margin-top: 20vh; 
+}
+
+/* End Footer Section */
+
+
+/* Profile Section */
+
+.hero-section{
+    height: 1100px;
+    background-image: linear-gradient(to right bottom, rgba(30, 115, 172, .7), rgba(142, 57, 153, .6)), url(../images/cars.jpg);
+    background-size: cover;
+    background-position: 35% 50%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    position: relative; 
+}
+
+.header-text{
+    display:flex;
+    justify-content: center;
+    padding-top: 2%;
+    left: 20rem;
+    top: 10rem;
+    color: white; 
+}
+
+

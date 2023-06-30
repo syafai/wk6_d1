@@ -1,0 +1,51 @@
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        <fieldset class="make-field">
+            {{ form.make.label }}
+            {{ form.make(class='form-control', placeholder='Make') }}
+        </fieldset>
+        <fieldset class="model-field">
+            {{ form.model.label }}
+            {{ form.model(class='form-control', placeholder='Model') }}
+        </fieldset>
+        <fieldset class="year-field">
+            {{ form.year.label }}
+            {{ form.year(class='form-control', placeholder='Year') }}
+        </fieldset>
+        <fieldset class="description-field">
+            {{ form.description.label }}
+            {{ form.description(class='form-control', placeholder='Description') }}
+        </fieldset>
+        <fieldset class="price-field">
+            {{ form.price.label }}
+            {{ form.price(class='form-control', placeholder='Price') }}
+        </fieldset>
+        <fieldset class="speed-field">
+            {{ form.max_speed.label }}
+            {{ form.max_speed(class='form-control', placeholder='Max Speed') }}
+        </fieldset>
+        <fieldset class="horsepower-field">
+            {{ form.horse_power.label }}
+            {{ form.horse_power(class='form-control', placeholder='Horsepower') }}
+        </fieldset>
+        <fieldset class="weight-field">
+            {{ form.weight.label }}
+            {{ form.weight(class='form-control', placeholder='Weight') }}
+        </fieldset>
+        <fieldset class="cost-field">
+            {{ form.cost_of_production.label }}
+            {{ form.cost_of_production(class='form-control', placeholder='Cost of Production') }}
+        </fieldset>
+        <fieldset class="series-field">
+            {{ form.series.label }}
+            {{ form.series(class='form-control', placeholder='Series') }}
+        </fieldset>
+        <fieldset class="snapple-field">
+            {{ form.random_fact.label }}
+            {{ form.random_fact(class='form-control', placeholder='Random Fact') }}
+        </fieldset>
+
+        {{ form.submit_button(class='btn btn-primary btn-block mt-2')}}
+    </div>
+</form>
